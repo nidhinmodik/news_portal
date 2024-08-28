@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon server.js",
-    "client": "npm run dev --prefix client",
-    "start": "node server.js",
-    "build": "npm run build --prefix client",
-    "dev": "concurrently \" npm run server \" \" npm run client \""
-  },
+  "server": "nodemon server.js",
+  "client": "vite build --config ./client/vite.config.js",
+  "start": "node server.js",
+  "build": "npm run build --prefix client",
+  "dev": "concurrently \"npm run server\" \"npm run client\""
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
